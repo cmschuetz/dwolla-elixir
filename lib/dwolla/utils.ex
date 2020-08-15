@@ -188,7 +188,7 @@ defmodule Dwolla.Utils do
       |> Poison.Decode.transform(%{
         as: %Dwolla.Transfer{
           amount: %Dwolla.Transfer.Amount{},
-          metadata: %Dwolla.Transfer.Metadata{}
+          clearing: %Dwolla.Transfer.Clearing{}
         }
       })
 
